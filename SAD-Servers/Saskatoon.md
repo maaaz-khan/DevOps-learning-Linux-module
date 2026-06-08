@@ -135,3 +135,5 @@ sha1sum
 This challenge demonstrated the power of Linux text-processing tools when analysing log files. By combining commands such as `awk`, `sort`, `uniq`, and `head`, I was able to transform raw log data into meaningful information and identify the IP address responsible for the highest number of requests.
 
 The exercise reinforced the importance of log analysis, command-line problem solving, and data processing skills that are commonly used in Linux administration, DevOps, and Site Reliability Engineering.
+
+<img width="2048" height="1330" alt="2" src="https://github.com/user-attachments/assets/b133b40b-f9fb-4948-9209-639b1a65e3e9" />
