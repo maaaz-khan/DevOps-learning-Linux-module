@@ -1,34 +1,29 @@
-# OverTheWire Bandit
+# OverTheWire Bandit Journey
 
-This section documents my journey through the OverTheWire Bandit wargame, where I completed Levels 0–20.
+As part of my Linux learning journey, I completed the first 20 levels of the OverTheWire Bandit wargame.
 
-Bandit is a Linux-based challenge platform designed to teach command-line skills, problem-solving, system investigation, networking, and security concepts through hands-on exercises.
+Bandit is designed to teach Linux fundamentals through hands-on challenges that require investigation, problem-solving, and practical use of command-line tools.
 
-Rather than simply recording solutions, I have documented the approach I took, the commands used, and the lessons learned from each challenge.
+Each level introduces new concepts and encourages the use of real Linux commands rather than memorisation.
 
 ## Skills Developed
 
-Throughout the Bandit challenges, I gained practical experience with:
+Throughout the challenges, I gained experience with:
 
-* Linux file system navigation
+* Linux file navigation
 * File permissions and ownership
 * Hidden files and directories
-* Text processing and searching
+* Text processing
 * Data encoding and decoding
 * Compression and archive formats
 * SSH authentication
 * Network communication
-* SSL/TLS connections
-* Port scanning and service discovery
-* Setuid binaries and privilege concepts
-* Troubleshooting and problem solving
+* Privilege escalation concepts
+* Problem-solving using Linux command-line tools
 
 ## Tools Used
 
 ```bash
-ls
-cd
-cat
 grep
 find
 sort
@@ -38,42 +33,14 @@ file
 strings
 xxd
 base64
-tr
 gzip
 bzip2
 tar
 ssh
 nc
 openssl
-nmap
 ```
-
-## Levels Completed
-
-* Level 0 → 1
-* Level 1 → 2
-* Level 2 → 3
-* Level 3 → 4
-* Level 4 → 5
-* Level 5 → 6
-* Level 6 → 7
-* Level 7 → 8
-* Level 8 → 9
-* Level 9 → 10
-* Level 10 → 11
-* Level 11 → 12
-* Level 12 → 13
-* Level 13 → 14
-* Level 14 → 15
-* Level 15 → 16
-* Level 16 → 17
-* Level 17 → 18
-* Level 18 → 19
-* Level 19 → 20
-* Level 20 → 21
 
 ## Key Takeaway
 
-Bandit helped me move beyond simply memorising Linux commands and taught me how to investigate problems, read documentation, combine tools, and think methodically when solving technical challenges.
-
-Many of the concepts introduced in these challenges directly relate to Linux administration, cloud engineering, DevOps, and cybersecurity.
+Bandit helped me move beyond simply learning Linux commands and taught me how to combine multiple tools together to solve real problems. The challenges reinforced the importance of investigation, persistence, and methodical troubleshooting.
