@@ -1,4 +1,4 @@
-# The Command Line Murders
+# "The Command Line Murders"
 
 ## Scenario
 
