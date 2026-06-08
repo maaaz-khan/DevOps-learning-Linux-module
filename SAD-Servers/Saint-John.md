@@ -1,4 +1,3 @@
-<img width="2048" height="1330" alt="1" src="https://github.com/user-attachments/assets/cda44c15-d1fa-4020-a24c-6a943a09a84f" />
 # "Saint John": what is writing to this log file?
 
 ## Scenario
@@ -94,3 +93,5 @@ kill
 ## Key Takeaway
 
 This challenge demonstrated a common Linux troubleshooting scenario: identifying a process responsible for excessive log generation. Rather than removing the log file, I investigated the underlying cause, identified the responsible process, and terminated it safely. This reinforced the importance of process investigation and log analysis when troubleshooting Linux systems.
+
+<img width="2048" height="1330" alt="1" src="https://github.com/user-attachments/assets/cda44c15-d1fa-4020-a24c-6a943a09a84f" />
