@@ -43,4 +43,4 @@ openssl
 
 ## Key Takeaway
 
-Bandit helped me move beyond simply learning Linux commands and taught me how to combine multiple tools together to solve real problems. The challenges reinforced the importance of investigation, persistence, and methodical troubleshooting.
+Bandit helped me move beyond simply learning Linux commands and taught me how to combine multiple tools together to solve real problems. The challenges reinforced the importance of investigation, persistence, and methodical troubleshooting. 
