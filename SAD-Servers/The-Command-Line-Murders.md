@@ -152,3 +152,5 @@ echo
 This challenge reinforced the value of systematic investigation and information gathering. Rather than solving a technical fault directly, the task required collecting clues, analysing multiple datasets, and correlating evidence to reach a conclusion.
 
 The exercise demonstrated how Linux command-line tools can be used not only for system administration but also for forensic investigations, troubleshooting, and data analysis. Many of the same investigative techniques apply to real-world DevOps, security, and incident response scenarios.
+
+<img width="2048" height="1330" alt="3" src="https://github.com/user-attachments/assets/22c431fc-32c0-4423-a2e2-70d379061494" />
