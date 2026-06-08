@@ -1,3 +1,4 @@
+<img width="2048" height="1330" alt="1" src="https://github.com/user-attachments/assets/cda44c15-d1fa-4020-a24c-6a943a09a84f" />
 # "Saint John": what is writing to this log file?
 
 ## Scenario
