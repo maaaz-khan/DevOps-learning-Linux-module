@@ -11,7 +11,7 @@ I started by creating a temporary working directory so I could safely manipulate
 
 ```bash
 mktemp -d
-cd /tmp/tmp.XXXXXXX
+cd /tmp/tmp.X
 ```
 
 I then copied `data.txt` into the working directory:
