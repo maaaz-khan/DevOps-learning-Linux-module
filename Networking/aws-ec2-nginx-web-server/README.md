@@ -1,4 +1,4 @@
-# 🌐 # 🌐 Deploying an NGINX Web Server on AWS EC2
+# 🌐 Deploying an NGINX Web Server on AWS EC2
 
 ![AWS](https://img.shields.io/badge/AWS-EC2-orange)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420)
