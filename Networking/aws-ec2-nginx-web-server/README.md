@@ -126,7 +126,7 @@ aws-ec2-nginx-web-server/
 - Enabled HTTP (80)
 - Allowed SSH (22) from my own IP
 
-### Screenshot
+### EC2 Instance
 
 ![EC2 Instance](images/ec2-instance-running.png)
 
@@ -144,7 +144,7 @@ Configured inbound rules to allow:
 | SSH | 22 | My Public IP |
 | HTTP | 80 | Anywhere (0.0.0.0/0) |
 
-### Screenshot
+### Security Group Configuration
 
 ![Security Group](images/security-group-rules.png)
 
@@ -162,7 +162,7 @@ chmod 400 nginx-project-key.pem
 ssh -i nginx-project-key.pem ubuntu@<EC2-Public-IP>
 ```
 
-### Screenshot
+### SSH Connection
 
 ![SSH](images/ssh-connection.png)
 
@@ -202,7 +202,7 @@ Verified the service
 sudo systemctl status nginx
 ```
 
-### Screenshot
+### NGINX Service Status
 
 ![NGINX Status](images/nginx-service-running.png)
 
@@ -218,7 +218,7 @@ This meant visitors could access the server using a human-readable domain name i
 |------|------|---------|
 | A | @ | EC2 Public IPv4 |
 
-### Screenshot
+### Cloudflare DNS Configuration
 
 ![Cloudflare DNS](images/cloudflare-dns-record.png)
 
@@ -226,7 +226,7 @@ This meant visitors could access the server using a human-readable domain name i
 
 ## 6. Verify Web Server
 
-### Access using EC2 Public IP
+### Access via EC2 Public IP
 
 ![NGINX IP](images/nginx-welcome-ip.png)
 
@@ -240,9 +240,8 @@ Successfully accessed the web server using:
 http://maazkhancloud.com
 ```
 
-### Screenshot
+<img width="1435" height="772" alt="Screenshot 2026-06-18 at 00 21 31" src="https://github.com/user-attachments/assets/e0fad1f6-2879-45b2-8380-6a0ec52d001e" />
 
-![Custom Domain](images/domain-nginx-homepage.png)
 
 ---
 
