@@ -1,4 +1,10 @@
-# 🌐 Deploying an NGINX Web Server on AWS EC2 with a Custom Domain
+# 🌐 # 🌐 Deploying an NGINX Web Server on AWS EC2
+
+![AWS](https://img.shields.io/badge/AWS-EC2-orange)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420)
+![NGINX](https://img.shields.io/badge/NGINX-Web_Server-009639)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-DNS-F38020)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu-yellow)
 
 Deploying a production-style Linux web server on **AWS EC2**, configuring **NGINX**, and making it accessible through a **custom domain using Cloudflare DNS**.
 
@@ -21,7 +27,20 @@ By the end of this project I successfully:
 
 ---
 
-# Architecture
+# Skills Demonstrated
+
+- Provisioning cloud infrastructure with AWS EC2
+- Managing Linux servers
+- SSH authentication using key pairs
+- Installing and managing system services
+- Configuring AWS Security Groups
+- DNS management using Cloudflare
+- Web server deployment with NGINX
+- Basic networking troubleshooting
+
+---
+
+# 🌐 Architecture
 
 ```
                 Internet
@@ -117,6 +136,9 @@ aws-ec2-nginx-web-server/
 
 Configured inbound rules to allow:
 
+- SSH (Port 22) from my own IP address for secure administration.
+- HTTP (Port 80) from anywhere so the website could be publicly accessed.
+
 | Protocol | Port | Source |
 |----------|------|--------|
 | SSH | 22 | My Public IP |
@@ -147,6 +169,8 @@ ssh -i nginx-project-key.pem ubuntu@<EC2-Public-IP>
 ---
 
 ## 4. Install NGINX
+
+After connecting to the server, I updated the package list and installed NGINX, which would act as the web server responsible for serving HTTP requests.
 
 Updated package lists
 
@@ -186,7 +210,9 @@ sudo systemctl status nginx
 
 ## 5. Configure Cloudflare DNS
 
-Created an **A Record** pointing my domain to the EC2 Public IPv4 address.
+After verifying that the web server was accessible using its public IPv4 address, I created an A Record in Cloudflare to map my domain to the EC2 instance.
+
+This meant visitors could access the server using a human-readable domain name instead of remembering an IP address.
 
 | Type | Name | Content |
 |------|------|---------|
@@ -267,15 +293,30 @@ Website
 
 Seeing each stage working together made networking concepts much easier to understand than learning them individually.
 
+```
+Laptop
+   │
+   ▼
+SSH
+   │
+   ▼
+AWS EC2
+   │
+   ▼
+Ubuntu
+   │
+   ▼
+NGINX
+```
 ---
 
-# ⚠ Challenges
+# ⚠️ Challenges
 
-One issue I encountered was attempting to SSH into the EC2 instance from my Ubuntu virtual machine.
+Initially I attempted to SSH into the EC2 instance from my Ubuntu virtual machine, but authentication continually failed.
 
-After troubleshooting, I realised my `.pem` private key had been downloaded onto my Mac rather than inside the virtual machine.
+After troubleshooting, I discovered the private SSH key had been downloaded to my macOS host rather than the virtual machine.
 
-Connecting through the macOS Terminal solved the issue immediately and reinforced the importance of understanding where authentication credentials are stored.
+Using the macOS Terminal immediately resolved the issue and highlighted the importance of understanding where authentication credentials are stored when working across multiple environments.
 
 ---
 
@@ -299,13 +340,11 @@ This project gave me practical experience with:
 
 # Future Improvements
 
-Some ideas I'd like to explore next:
-
-- Configure HTTPS using SSL/TLS
-- Enable Cloudflare Proxy
 - Deploy a custom HTML website
-- Purchase an Elastic IP
-- Configure automatic deployments with GitHub Actions
-- Deploy using Infrastructure as Code (Terraform)
+- Configure HTTPS using SSL/TLS
+- Enable the Cloudflare Proxy
+- Assign an Elastic IP to the EC2 instance
+- Automate deployment using GitHub Actions
+- Provision infrastructure using Terraform
 
 ---
