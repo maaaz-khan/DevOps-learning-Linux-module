@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics | Ma'aaz Khan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">🐳 Ma'aaz Khan</div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/stats">Stats</a></li>
+        <li><a href="/health">Health</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <section class="hero">
+
+        <span class="badge">Application Statistics</span>
+
+        <h1>📊 Redis Statistics Dashboard</h1>
+
+        <p class="subtitle">
+            View live information about the application and its Redis database.
+            These statistics update as the application is used.
+        </p>
+
+    </section>
+
+    <section class="features">
+
+        <div class="feature-card">
+            <h3>👥 Total Visits</h3>
+
+            <h2 style="font-size:55px; color:#38bdf8;">
+                {{ visits }}
+            </h2>
+
+            <p>Total number of visits recorded by Redis.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>💚 Application Status</h3>
+
+            <h2 style="font-size:32px; color:#22c55e;">
+                Online
+            </h2>
+
+            <p>The Flask application is currently running successfully.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>⚡ Database</h3>
+
+            <h2 style="font-size:32px; color:#f59e0b;">
+                Redis Connected
+            </h2>
+
+            <p>Redis is available and storing application data.</p>
+        </div>
+
+    </section>
+
+    <section class="endpoints">
+
+        <h2>Quick Actions</h2>
+
+        <div class="hero-actions">
+
+            <a href="/count" class="btn primary">
+                Increment Counter
+            </a>
+
+            <a href="/reset" class="btn secondary">
+                Reset Counter
+            </a>
+
+            <a href="/" class="btn secondary">
+                Back Home
+            </a>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    <p>
+        🐳 Docker & Redis Demo Application • Built by <strong>Ma'aaz Khan</strong>
+    </p>
+</footer>
+
+</body>
+</html>

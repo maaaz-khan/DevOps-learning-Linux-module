@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Ma'aaz Khan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">🐳 Ma'aaz Khan</div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/stats">Stats</a></li>
+        <li><a href="/health">Health</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+
+    <section class="hero">
+
+        <span class="badge">About This Project</span>
+
+        <h1>Docker & Redis Demo Application</h1>
+
+        <p class="subtitle">
+            This project was built as part of my DevOps learning journey to
+            demonstrate how modern applications can be containerised using
+            Docker. It combines Flask, Redis and Docker to create a simple,
+            scalable web application that showcases backend development,
+            networking and container orchestration.
+        </p>
+
+    </section>
+
+    <section class="features">
+
+        <div class="feature-card">
+            <h3>🐍 Flask</h3>
+            <p>
+                Flask powers the web application by serving web pages,
+                handling routes and providing REST-style API endpoints.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>⚡ Redis</h3>
+            <p>
+                Redis acts as a high-performance in-memory database used for
+                storing counters and application data efficiently.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🐳 Docker</h3>
+            <p>
+                Docker packages the application and its dependencies into
+                portable containers, allowing it to run consistently across
+                different environments.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="endpoints">
+
+        <h2>Technologies Used</h2>
+
+        <div class="stats-grid">
+
+            <div class="stat-box">
+                <h4>Python</h4>
+                <p>Main programming language used to build the application.</p>
+            </div>
+
+            <div class="stat-box">
+                <h4>Flask</h4>
+                <p>Lightweight Python framework for web development.</p>
+            </div>
+
+            <div class="stat-box">
+                <h4>Redis</h4>
+                <p>Fast in-memory database for counters and key-value storage.</p>
+            </div>
+
+            <div class="stat-box">
+                <h4>Docker</h4>
+                <p>Containerises the application and its dependencies.</p>
+            </div>
+
+            <div class="stat-box">
+                <h4>Docker Compose</h4>
+                <p>Runs multiple services together in a single environment.</p>
+            </div>
+
+            <div class="stat-box">
+                <h4>HTML & CSS</h4>
+                <p>Creates a responsive and user-friendly interface.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        🐳 Docker & Redis Demo Application • Built by <strong>Ma'aaz Khan</strong> as part of my DevOps learning journey.
+    </p>
+</footer>
+
+</body>
+</html>

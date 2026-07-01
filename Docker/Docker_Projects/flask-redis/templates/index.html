@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker & Redis Demo | Ma'aaz Khan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <nav class="navbar">
+   <div class="logo">🐳 Ma'aaz Khan</div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/stats">Stats</a></li>
+      <li><a href="/health">Health</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <span class="badge">DevOps Portfolio Project</span>
+
+      <h1>Docker & Redis Demo Application</h1>
+
+      <p class="subtitle">
+  This project demonstrates how Flask and Redis can work together inside
+  Docker containers. It showcases containerisation, networking and backend
+  development as part of my DevOps learning journey.
+    </p>
+
+    <p style="margin-top:20px; color:#94a3b8;">
+    Built by <strong>Ma'aaz Khan</strong>
+</p>
+
+      <div class="hero-actions">
+        <a href="/count" class="btn primary">View Counter</a>
+        <a href="/health" class="btn secondary">Check Health</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>📊 Counter</h3>
+        <p>Increase and track visits using a Redis-powered counter.</p>
+        <a href="/count">Open Counter →</a>
+      </div>
+
+      <div class="feature-card">
+        <h3>🔄 Reset</h3>
+        <p>Reset the Redis counter back to zero for a fresh start.</p>
+        <a href="/reset">Reset Counter →</a>
+      </div>
+
+      <div class="feature-card">
+        <h3>💚 Health</h3>
+        <p>Check whether Flask and Redis are running correctly.</p>
+        <a href="/health">Check Status →</a>
+      </div>
+    </section>
+
+    <section class="endpoints">
+      <h2>Available Endpoints</h2>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <h4>GET /count</h4>
+          <p>Increment counter</p>
+        </div>
+
+        <div class="stat-box">
+          <h4>GET /reset</h4>
+          <p>Reset counter</p>
+        </div>
+
+        <div class="stat-box">
+          <h4>GET /health</h4>
+          <p>Health check</p>
+        </div>
+
+        <div class="stat-box">
+          <h4>POST /store</h4>
+          <p>Store key-value data</p>
+        </div>
+
+        <div class="stat-box">
+          <h4>GET /retrieve/&lt;key&gt;</h4>
+          <p>Retrieve stored value</p>
+        </div>
+
+        <div class="stat-box">
+          <h4>GET /stats</h4>
+          <p>View Redis statistics</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <p>🐳 Docker & Redis Demo Application • Built by <strong>Ma'aaz Khan</strong> • DevOps Portfolio • 2026</p>
+    </div>
+</footer>
+</body>
+</html>

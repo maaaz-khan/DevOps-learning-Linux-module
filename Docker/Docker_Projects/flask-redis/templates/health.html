@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Check | Ma'aaz Khan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">🐳 Ma'aaz Khan</div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/stats">Stats</a></li>
+        <li><a href="/health">Health</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+
+    <section class="hero">
+        <span class="badge">Service Health</span>
+
+        <h1>💚 Application Health Check</h1>
+
+        <p class="subtitle">
+            This page checks whether the Flask application and Redis database
+            are running correctly inside Docker.
+        </p>
+    </section>
+
+    <section class="features">
+
+        <div class="feature-card">
+            <h3>🐍 Flask App</h3>
+            <h2 style="color:#22c55e; margin:20px 0;">Online</h2>
+            <p>The Flask web server is running successfully.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>⚡ Redis</h3>
+            <h2 style="color:#22c55e; margin:20px 0;">Connected</h2>
+            <p>Redis is reachable and responding to requests.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🐳 Docker</h3>
+            <h2 style="color:#38bdf8; margin:20px 0;">Running</h2>
+            <p>The application is running inside a containerised environment.</p>
+        </div>
+
+    </section>
+
+    <section class="endpoints">
+        <h2>Health Summary</h2>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h4>Status</h4>
+                <p>{{ status }}</p>
+            </div>
+
+            <div class="stat-box">
+                <h4>Redis</h4>
+                <p>{{ redis_status }}</p>
+            </div>
+
+            <div class="stat-box">
+                <h4>HTTP Code</h4>
+                <p>{{ status_code }}</p>
+            </div>
+        </div>
+
+        <div class="hero-actions">
+            <a href="/" class="btn secondary">Back Home</a>
+            <a href="/stats" class="btn primary">View Stats</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>🐳 Docker & Redis Demo Application • Built by <strong>Ma'aaz Khan</strong> • DevOps Portfolio • 2026</p>
+    </div>
+</footer>
+
+</body>
+</html>
