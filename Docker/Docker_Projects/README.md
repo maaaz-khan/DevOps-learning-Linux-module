@@ -1,5 +1,11 @@
 # 🐳 Flask + Redis Docker Application
 
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-000000?logo=flask&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerised-2496ED?logo=docker&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-In--Memory%20Database-DC382D?logo=redis&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 A simple Flask web application containerised with Docker and powered by Redis. This project was built as part of my DevOps learning journey to gain hands-on experience with containerisation, web development, and Docker networking.
 
 ![Application Home Page](Screenshots/home.png)
