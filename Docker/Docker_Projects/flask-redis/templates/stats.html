@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics | Ma'aaz Khan</title>
+    <title>Statistics | VisitTracker Pro</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
 <nav class="navbar">
-    <div class="logo">🐳 Ma'aaz Khan</div>
+    <div class="logo"> VisitTracker Pro</div>
 
     <ul>
         <li><a href="/">Home</a></li>
@@ -20,25 +20,23 @@
     </ul>
 </nav>
 
-<div class="container">
+<main class="container">
 
     <section class="hero">
-
         <span class="badge">Application Statistics</span>
 
-        <h1>📊 Redis Statistics Dashboard</h1>
+        <h1>VisitTracker Pro Dashboard</h1>
 
         <p class="subtitle">
-            View live information about the application and its Redis database.
-            These statistics update as the application is used.
+            View live application information, including the total visit count,
+            Flask app status and Redis connection status.
         </p>
-
     </section>
 
     <section class="features">
 
         <div class="feature-card">
-            <h3>👥 Total Visits</h3>
+            <h3>📊 Total Visits</h3>
 
             <h2 style="font-size:55px; color:#38bdf8;">
                 {{ visits }}
@@ -58,13 +56,13 @@
         </div>
 
         <div class="feature-card">
-            <h3>⚡ Database</h3>
+            <h3>⚡ Redis Status</h3>
 
             <h2 style="font-size:32px; color:#f59e0b;">
-                Redis Connected
+                Connected
             </h2>
 
-            <p>Redis is available and storing application data.</p>
+            <p>Redis is available and storing visit data.</p>
         </div>
 
     </section>
@@ -74,29 +72,19 @@
         <h2>Quick Actions</h2>
 
         <div class="hero-actions">
-
-            <a href="/count" class="btn primary">
-                Increment Counter
-            </a>
-
-            <a href="/reset" class="btn secondary">
-                Reset Counter
-            </a>
-
-            <a href="/" class="btn secondary">
-                Back Home
-            </a>
-
+            <a href="/count" class="btn primary">Increment Counter</a>
+            <a href="/reset" class="btn secondary">Reset Counter</a>
+            <a href="/" class="btn secondary">Back Home</a>
         </div>
 
     </section>
 
-</div>
+</main>
 
 <footer>
-    <p>
-        🐳 Docker & Redis Demo Application • Built by <strong>Ma'aaz Khan</strong>
-    </p>
+    <div class="footer-content">
+        <p>📊 VisitTracker Pro • Designed & Developed by <strong>Ma'aaz Khan</strong> • DevOps Portfolio • 2026</p>
+    </div>
 </footer>
 
 </body>

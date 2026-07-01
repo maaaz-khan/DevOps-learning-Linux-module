@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Check | Ma'aaz Khan</title>
+    <title>System Health | VisitTracker Pro</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
 <nav class="navbar">
-    <div class="logo">🐳 Ma'aaz Khan</div>
+    <div class="logo"> VisitTracker Pro</div>
 
     <ul>
         <li><a href="/">Home</a></li>
@@ -23,69 +23,93 @@
 <main class="container">
 
     <section class="hero">
-        <span class="badge">Service Health</span>
 
-        <h1>💚 Application Health Check</h1>
+        <span class="badge">System Health</span>
+
+        <h1>Application Health Dashboard</h1>
 
         <p class="subtitle">
-            This page checks whether the Flask application and Redis database
-            are running correctly inside Docker.
+            Monitor the health of VisitTracker Pro by checking the status of the
+            Flask application, Redis database and Docker environment.
         </p>
+
     </section>
 
     <section class="features">
 
         <div class="feature-card">
-            <h3>🐍 Flask App</h3>
-            <h2 style="color:#22c55e; margin:20px 0;">Online</h2>
-            <p>The Flask web server is running successfully.</p>
+            <h3>🐍 Flask Application</h3>
+
+            <h2 style="color:#22c55e; margin:20px 0;">
+                Online
+            </h2>
+
+            <p>
+                The Flask web application is running and responding successfully.
+            </p>
         </div>
 
         <div class="feature-card">
-            <h3>⚡ Redis</h3>
-            <h2 style="color:#22c55e; margin:20px 0;">Connected</h2>
-            <p>Redis is reachable and responding to requests.</p>
+            <h3>⚡ Redis Database</h3>
+
+            <h2 style="color:#22c55e; margin:20px 0;">
+                Connected
+            </h2>
+
+            <p>
+                Redis is connected and available for storing visit data.
+            </p>
         </div>
 
         <div class="feature-card">
-            <h3>🐳 Docker</h3>
-            <h2 style="color:#38bdf8; margin:20px 0;">Running</h2>
-            <p>The application is running inside a containerised environment.</p>
+            <h3>🐳 Docker Environment</h3>
+
+            <h2 style="color:#38bdf8; margin:20px 0;">
+                Running
+            </h2>
+
+            <p>
+                The application is running inside a Docker container as expected.
+            </p>
         </div>
 
     </section>
 
     <section class="endpoints">
+
         <h2>Health Summary</h2>
 
         <div class="stats-grid">
+
             <div class="stat-box">
-                <h4>Status</h4>
+                <h4>Application Status</h4>
                 <p>{{ status }}</p>
             </div>
 
             <div class="stat-box">
-                <h4>Redis</h4>
+                <h4>Redis Connection</h4>
                 <p>{{ redis_status }}</p>
             </div>
 
             <div class="stat-box">
-                <h4>HTTP Code</h4>
+                <h4>HTTP Status</h4>
                 <p>{{ status_code }}</p>
             </div>
+
         </div>
 
         <div class="hero-actions">
+            <a href="/stats" class="btn primary">View Statistics</a>
             <a href="/" class="btn secondary">Back Home</a>
-            <a href="/stats" class="btn primary">View Stats</a>
         </div>
+
     </section>
 
 </main>
 
 <footer>
     <div class="footer-content">
-        <p>🐳 Docker & Redis Demo Application • Built by <strong>Ma'aaz Khan</strong> • DevOps Portfolio • 2026</p>
+        <p>📊 VisitTracker Pro • Designed & Developed by <strong>Ma'aaz Khan</strong> • DevOps Portfolio • 2026</p>
     </div>
 </footer>
 

@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Visitor Counter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Counter | VisitTracker Pro</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
 <nav class="navbar">
-    <div class="logo">🐳 Ma'aaz Khan</div>
+    <div class="logo"> VisitTracker Pro</div>
 
     <ul>
         <li><a href="/">Home</a></li>
@@ -19,20 +20,28 @@
     </ul>
 </nav>
 
-<div class="container">
+<main class="container">
 
     <section class="hero">
 
-        <span class="badge">Visitor Counter</span>
+        <span class="badge">Live Visitor Counter</span>
 
-        <h1>👋 Welcome!</h1>
+        <h1>Current Visit Count</h1>
 
-        <h2 style="font-size:70px; margin:40px 0; color:#38bdf8;">
+        <p class="subtitle">
+            Every time this page is opened, the counter is updated automatically
+            using Redis, demonstrating fast in-memory data storage with Flask
+            and Docker.
+        </p>
+
+        <h2 style="font-size:72px; margin:40px 0; color:#38bdf8;">
             {{ visits }}
         </h2>
 
-        <p class="subtitle">
-            This page has been visited <strong>{{ visits }}</strong> times.
+        <p style="font-size:1.1rem; color:#94a3b8;">
+            This page has been visited
+            <strong style="color:#ffffff;">{{ visits }}</strong>
+            times.
         </p>
 
         <div class="hero-actions">
@@ -43,7 +52,13 @@
 
     </section>
 
-</div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>📊 VisitTracker Pro • Designed & Developed by <strong>Ma'aaz Khan</strong> • DevOps Portfolio • 2026</p>
+    </div>
+</footer>
 
 </body>
 </html>

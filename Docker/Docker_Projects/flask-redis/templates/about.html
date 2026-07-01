@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Ma'aaz Khan</title>
+    <title>About | VisitTracker Pro</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
 <nav class="navbar">
-    <div class="logo">🐳 Ma'aaz Khan</div>
+    <div class="logo"> VisitTracker Pro</div>
 
     <ul>
         <li><a href="/">Home</a></li>
@@ -23,45 +23,40 @@
 <main class="container">
 
     <section class="hero">
+        <span class="badge">About VisitTracker Pro</span>
 
-        <span class="badge">About This Project</span>
-
-        <h1>Docker & Redis Demo Application</h1>
+        <h1>Simple Visit Tracking Powered by Flask, Redis and Docker</h1>
 
         <p class="subtitle">
-            This project was built as part of my DevOps learning journey to
-            demonstrate how modern applications can be containerised using
-            Docker. It combines Flask, Redis and Docker to create a simple,
-            scalable web application that showcases backend development,
-            networking and container orchestration.
+            VisitTracker Pro is a small web application built to track page visits,
+            display application statistics and check system health. It was designed
+            and developed by Ma'aaz Khan as part of my DevOps learning journey.
         </p>
-
     </section>
 
     <section class="features">
 
         <div class="feature-card">
-            <h3>🐍 Flask</h3>
+            <h3>📊 Visit Tracking</h3>
             <p>
-                Flask powers the web application by serving web pages,
-                handling routes and providing REST-style API endpoints.
+                The application uses Redis to count and store visits, making it
+                fast and efficient for simple tracking functionality.
             </p>
         </div>
 
         <div class="feature-card">
-            <h3>⚡ Redis</h3>
+            <h3>💚 Health Checks</h3>
             <p>
-                Redis acts as a high-performance in-memory database used for
-                storing counters and application data efficiently.
+                The health page checks whether the Flask application and Redis
+                service are running correctly inside the containerised environment.
             </p>
         </div>
 
         <div class="feature-card">
-            <h3>🐳 Docker</h3>
+            <h3>🐳 Containerised Setup</h3>
             <p>
-                Docker packages the application and its dependencies into
-                portable containers, allowing it to run consistently across
-                different environments.
+                Docker and Docker Compose are used to run the Flask and Redis
+                services together in a consistent development environment.
             </p>
         </div>
 
@@ -75,32 +70,32 @@
 
             <div class="stat-box">
                 <h4>Python</h4>
-                <p>Main programming language used to build the application.</p>
+                <p>Main programming language used to build the backend.</p>
             </div>
 
             <div class="stat-box">
                 <h4>Flask</h4>
-                <p>Lightweight Python framework for web development.</p>
+                <p>Web framework used for routing, templates and endpoints.</p>
             </div>
 
             <div class="stat-box">
                 <h4>Redis</h4>
-                <p>Fast in-memory database for counters and key-value storage.</p>
+                <p>In-memory database used for visit tracking and key-value storage.</p>
             </div>
 
             <div class="stat-box">
                 <h4>Docker</h4>
-                <p>Containerises the application and its dependencies.</p>
+                <p>Packages the application and dependencies into containers.</p>
             </div>
 
             <div class="stat-box">
                 <h4>Docker Compose</h4>
-                <p>Runs multiple services together in a single environment.</p>
+                <p>Runs the Flask and Redis services together.</p>
             </div>
 
             <div class="stat-box">
                 <h4>HTML & CSS</h4>
-                <p>Creates a responsive and user-friendly interface.</p>
+                <p>Creates the responsive user interface and page styling.</p>
             </div>
 
         </div>
@@ -110,9 +105,9 @@
 </main>
 
 <footer>
-    <p>
-        🐳 Docker & Redis Demo Application • Built by <strong>Ma'aaz Khan</strong> as part of my DevOps learning journey.
-    </p>
+    <div class="footer-content">
+        <p>📊 VisitTracker Pro • Designed & Developed by <strong>Ma'aaz Khan</strong> • DevOps Portfolio • 2026</p>
+    </div>
 </footer>
 
 </body>

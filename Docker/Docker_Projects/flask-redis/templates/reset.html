@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter Reset | Ma'aaz Khan</title>
+    <title>Reset Counter | VisitTracker Pro</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
 <nav class="navbar">
-    <div class="logo">🐳 Ma'aaz Khan</div>
+    <div class="logo"> VisitTracker Pro</div>
 
     <ul>
         <li><a href="/">Home</a></li>
@@ -20,17 +20,23 @@
     </ul>
 </nav>
 
-<div class="container">
+<main class="container">
 
     <section class="hero">
 
         <span class="badge">Counter Reset</span>
 
-        <h1>✅ Counter Reset Successfully</h1>
+        <h1>Counter Successfully Reset</h1>
 
         <p class="subtitle">
-            The visitor counter has been reset back to <strong>0</strong>.
+            Your visitor counter has been reset back to <strong>0</strong>.
+            You can now begin tracking new visits from a clean starting point.
         </p>
+
+        <div style="margin:40px 0;">
+            <h2 style="font-size:72px; color:#38bdf8;">0</h2>
+            <p style="color:#94a3b8;">Current Visit Count</p>
+        </div>
 
         <div class="hero-actions">
             <a href="/count" class="btn primary">Visit Counter</a>
@@ -39,12 +45,12 @@
 
     </section>
 
-</div>
+</main>
 
 <footer>
-    <p>
-        🐳 Docker & Redis Demo Application • Built by <strong>Ma'aaz Khan</strong>
-    </p>
+    <div class="footer-content">
+        <p>📊 VisitTracker Pro • Designed & Developed by <strong>Ma'aaz Khan</strong> • DevOps Portfolio • 2026</p>
+    </div>
 </footer>
 
 </body>
