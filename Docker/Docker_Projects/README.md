@@ -2,6 +2,8 @@
 
 A simple Flask web application containerised with Docker and powered by Redis. This project was built as part of my DevOps learning journey to gain hands-on experience with containerisation, web development, and Docker networking.
 
+![Application Home Page](Screenshots/home.png)
+
 ---
 
 ## 🚀 Features
