@@ -105,7 +105,7 @@ Below are screenshots of the application, showcasing the user interface and key 
 
 The application's landing page, providing navigation to all available features and endpoints.
 
-![Home Page](screenshots/home.png)
+![Home Page](Screenshots/home.png)
 
 ---
 
@@ -113,7 +113,7 @@ The application's landing page, providing navigation to all available features a
 
 Provides an overview of the project, explaining its purpose and the technologies used throughout the application.
 
-![About Page](screenshots/about.png)
+![About Page](Screenshots/about.png)
 
 ---
 
@@ -121,7 +121,7 @@ Provides an overview of the project, explaining its purpose and the technologies
 
 Displays application statistics and information retrieved from Redis, giving an overview of the application's current state.
 
-![Statistics Page](screenshots/stats.png)
+![Statistics Page](Screenshots/stats.png)
 
 ---
 
@@ -137,7 +137,7 @@ Demonstrates the Redis-powered visitor counter, which automatically increments e
 
 Resets the visitor counter back to zero, allowing the application state to be refreshed for testing purposes.
 
-![Reset Counter](screenshots/reset.png)
+![Reset Counter](Screenshots/reset.png)
 
 ---
 
@@ -145,7 +145,7 @@ Resets the visitor counter back to zero, allowing the application state to be re
 
 Displays the application's health status by verifying that both the Flask web server and Redis service are running correctly.
 
-![Health Check](screenshots/health.png)
+![Health Check](Screenshots/health.png)
 
 ---
 
@@ -153,7 +153,7 @@ Displays the application's health status by verifying that both the Flask web se
 
 Highlights the core technologies and tools used to develop and containerise the application.
 
-![Technologies Used](screenshots/tech.png)
+![Technologies Used](Screenshots/tech.png)
 
 ---
 
