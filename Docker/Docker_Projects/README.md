@@ -137,7 +137,7 @@ Displays application statistics and information retrieved from Redis, giving an 
 
 Demonstrates the Redis-powered visitor counter, which automatically increments each time the page is accessed.
 
-![Visitor Counter](screenshots/incr.png)
+![Visitor Counter](Screenshots/incr.png)
 
 ---
 
